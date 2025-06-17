@@ -16,6 +16,10 @@ Batch-compatible: Processes multiple samples simultaneously
 # Create a new conda environment
 conda create -n crispr_analysis r-base r-essentials r-biocmanager bioconductor-shortread bioconductor-biostrings r-dplyr r-stringr r-optparse r-purrr
 
+pip install biopython pandas tqdm
+
+pip install pyfastx
+
 # Activate the environment
 conda activate crispr_analysis
 
