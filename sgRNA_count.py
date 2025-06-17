@@ -40,7 +40,7 @@ def process_sample(fastq_file, library, ncpu):
         results = list(tqdm(pool.imap(count_sequences, 
                                     [(seq, fastq_file) for seq in targets]),
                       total=len(targets),
-                      desc=f"Processing {os.path.basename(fastq_file)}")
+                      desc=f"Processing {os.path.basename(fastq_file)}"))
     
     return pd.DataFrame(results, columns=['gRNA.sequence', 'count'])
 
