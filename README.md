@@ -1,7 +1,18 @@
 # sgRNA_count
 实现mageck的定量，不过是用R语言。
 
-#SOFTWARE
+A high-performance R script that rapidly quantifies CRISPR sgRNA abundances from sequencing data by parallel pattern matching against a reference library, with command-line interface for batch processing."
+
+Key features highlighted:
+
+CRISPR-specific: Designed for sgRNA counting
+
+Parallelized: Uses multicore processing (40+ CPUs)
+
+CLI-enabled: Simple command-line execution
+
+Batch-compatible: Processes multiple samples simultaneously
+
 # Create a new conda environment
 conda create -n crispr_analysis r-base r-essentials r-biocmanager bioconductor-shortread bioconductor-biostrings r-dplyr r-stringr r-optparse r-purrr
 
