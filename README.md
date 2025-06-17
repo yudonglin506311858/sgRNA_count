@@ -19,13 +19,21 @@ conda create -n crispr_analysis r-base r-essentials r-biocmanager bioconductor-s
 # Activate the environment
 conda activate crispr_analysis
 
-Parameter	Shorthand	Required	Default	Description
---fastq	-f	Yes	-	Comma-separated list of gzipped FASTQ files (e.g., sample1.fq.gz,sample2.fq.gz)
---library	-l	Yes	-	CSV file containing sgRNA library (columns: id, gRNA.sequence, Gene)
---names	-n	No	Auto-generated	Comma-separated sample names matching FASTQ files (e.g., ctrl1,ctrl2,exp1). If omitted, names will be derived from filenames.
+# Parameter	Shorthand	Required	Default	Description
+
+--fastq	-f	Yes	-	Comma-separated list of gzipped FASTQ files (e.g., sample1.fq.gz,sample2.fq.gz)
+
+--library	-l	Yes	-	CSV file containing sgRNA library (columns: id, gRNA.sequence, Gene)
+
+--names	-n	No	Auto-generated	Comma-separated sample names matching FASTQ files (e.g., ctrl1,ctrl2,exp1). If omitted, names will be derived from filenames.
+
 --ncpu	-c	No	10	Number of CPU cores for parallel processing (recommend 20-50 for large datasets)
---output	-o	No	sgRNA_counts	Output filename prefix (e.g., specifying --output results creates results_merged_all_samples.csv)
+
+--output	-o	No	sgRNA_counts	Output filename prefix (e.g., specifying --output results creates results_merged_all_samples.csv)
+
 --seed	-s	No	123	Random seed for reproducibility (used in subsampling if implemented)
+
+![image](https://github.com/user-attachments/assets/41f0b1a5-1639-4819-9a46-7e33f6206211)
 
 # example
 Rscript sgRNA_count.R \
