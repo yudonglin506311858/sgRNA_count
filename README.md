@@ -1,4 +1,5 @@
 # sgRNA_count
+实现mageck的定量，不过是用R语言。
 
 #SOFTWARE
 # Create a new conda environment
@@ -6,11 +7,6 @@ conda create -n crispr_analysis r-base r-essentials r-biocmanager bioconductor-s
 
 # Activate the environment
 conda activate crispr_analysis
-
-install.packages('BiocManager')
-
-BiocManager::install(c('ShortRead', 'Biostrings', 'IRanges', 'XVector'))
-
 
 
 # example
