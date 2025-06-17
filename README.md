@@ -1,5 +1,5 @@
 # sgRNA_count
-实现mageck的定量，不过是用R语言。
+用R语言实现mageck的sgRNA定量。
 
 A high-performance R script that rapidly quantifies CRISPR sgRNA abundances from sequencing data by parallel pattern matching against a reference library, with command-line interface for batch processing."
 
@@ -33,7 +33,9 @@ conda activate crispr_analysis
 
 --seed	-s	No	123	Random seed for reproducibility (used in subsampling if implemented)
 
-![image](https://github.com/user-attachments/assets/41f0b1a5-1639-4819-9a46-7e33f6206211)
+
+![image](https://github.com/user-attachments/assets/04359169-dc18-4059-8686-3886fbce98be)
+
 
 # example
 Rscript sgRNA_count.R \
