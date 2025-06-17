@@ -28,4 +28,3 @@ Rscript sgRNA_count.R \
   --library library.csv \
   --output sgRNA_counts
 ![image](https://github.com/user-attachments/assets/5e57b362-3354-4e24-9507-77eb09f4975f)
-![image](https://github.com/user-attachments/assets/5e57b362-3354-4e24-9507-77eb09f4975f)
